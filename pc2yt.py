@@ -149,7 +149,7 @@ def get_latest_podcasts():
                     url = link['href']
                     break
             if url is not None:
-                podcast = Podcast(title=entry['title'], description=entry['subtitle'], url=url)
+                podcast = Podcast(title=entry['title'], description=entry['title'], url=url)
                 podcasts.append(podcast)
         else:
             break
